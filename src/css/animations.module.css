@@ -1,0 +1,119 @@
+.hidden {
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  .scale {
+    transition: transform 0.15s ease-in-out;
+  }
+
+  .scale:hover {
+    transform: scale(1.03);
+  }
+
+  .scale:active {
+    transform: scale(0.97);
+  }
+}
+
+.fade_in {
+  opacity: 0;
+  animation: fade_in 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade_in {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+    filter: blur(0.2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0rem);
+  }
+}
+
+.focus_in {
+  opacity: 0;
+  animation: focus_in 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes focus_in {
+  from {
+    opacity: 0;
+    letter-spacing: -1rem;
+    filter: blur(0.2rem);
+  }
+  to {
+    opacity: 1;
+    letter-spacing: normal;
+    filter: blur(0rem);
+  }
+}
+
+.scale_up {
+  scale: 0;
+  animation: scale_up 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale_up {
+  from {
+    opacity: 0;
+    scale: 0;
+    filter: blur(0.2rem);
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    filter: blur(0rem);
+  }
+}
+
+.scale_left {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: 0% 0%;
+  animation: scale_left 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale_left {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: 0% 0%;
+    filter: blur(0.2rem);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+    filter: blur(0rem);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    opacity: 1;
+  }
+
+  .fade_in {
+    opacity: 1;
+  }
+
+  .focus_in {
+    opacity: 1;
+  }
+
+  .scale_up {
+    scale: 1;
+  }
+
+  .scale_left {
+    scale: 1;
+  }
+}
