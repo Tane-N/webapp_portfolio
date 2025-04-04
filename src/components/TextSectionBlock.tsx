@@ -16,6 +16,7 @@ export function TextBlockSection(props: React.PropsWithoutRef<Props>) {
     <Stack justify="flex-start" p={"lg"} maw={props.maw} gap={"xs"} ref={ref}>
       <Text
         tt="uppercase"
+        size="sm"
         fw={600}
         c={"orange.5"}
         className={inViewport ? animations.fade_in : animations.hidden}
