@@ -5,7 +5,8 @@ import { useInViewport } from "@mantine/hooks";
 interface Props {
   w: number;
   heading: string;
-  ptb: number;
+  mt: number;
+  mb: number;
 }
 
 export function TextPageHeading(props: React.PropsWithoutRef<Props>) {
@@ -18,8 +19,8 @@ export function TextPageHeading(props: React.PropsWithoutRef<Props>) {
       w={props.w}
       maw={"100%"}
       gap={"lg"}
-      pt={props.ptb}
-      pb={props.ptb}
+      mt={props.mt}
+      mb={props.mb}
     >
       <Divider />
       <Title

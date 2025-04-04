@@ -26,8 +26,8 @@ export default function App() {
     <BrowserRouter>
       <BackgroundGradient />
       <BackgroundEmberAnimation />
-      <HeaderSimple h={70} logo="/images/logo_no_text.webp" logoH={"90%"} />
-      <Box mb={100} />
+      <HeaderSimple h={70} logo="/images/logo_with_text.webp" logoH={"90%"} />
+      <Box mb={120} />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

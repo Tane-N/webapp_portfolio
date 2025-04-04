@@ -1,4 +1,4 @@
-import { Flex } from "@mantine/core";
+import { Flex, Box } from "@mantine/core";
 import { TextPageHeading } from "../components/TextPageHeading";
 import { TextBlockSection } from "../components/TextSectionBlock";
 import { CardGridCapsule } from "../components/CardGridCapsule";
@@ -33,9 +33,9 @@ const carouselCards = [
 ];
 
 const mainTextBlock = {
-  tagline: "Lorem ipsum",
-  heading: "Lorem ipsum dolorem",
-  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  tagline: "Thanks for checking out my website!",
+  heading: "My name is Taneli Nieminen",
+  body: "I am a game/frontend developer from Finland. I specialize in programming and software development, but have enough experience in UI/UX design to hold my own. I founded my own company in 2023, and have released multiple games since then, while also getting the opportunity to work with some awesome people. Currently I'm looking for full-time employment in the games industry, or as a frontend developer. Please do not hesitate to contact me for work, networking or advice! Always happy to make new contacts.",
 };
 
 const capsuleCards = [
@@ -43,25 +43,25 @@ const capsuleCards = [
     image: "/images/house_of_mimics_capsule.webp",
     content: "Multiplayer anomaly horror",
     link: "https://store.steampowered.com/app/3450150/House_of_Mimics/",
-    color: "pink",
+    color: "orangered",
   },
   {
     image: "/images/camera_tenebris_capsule.webp",
     content: "Horror game about perspectives",
     link: "https://jorava.itch.io/camera-tenebris",
-    color: "green",
+    color: "beige",
   },
   {
     image: "/images/boing_odyssey_capsule.webp",
     content: "Contraption building puzzle game",
     link: "https://store.steampowered.com/app/2587960/Boing_Odyssey/",
-    color: "blue",
+    color: "pink",
   },
   {
     image: "/images/project_godspeed_capsule.webp",
     content: "Roguelike run-and-gun platformer",
     link: "https://teamdatavi.itch.io/project-godspeed",
-    color: "white",
+    color: "purple",
   },
 ];
 
@@ -76,18 +76,19 @@ export default function Home() {
     >
       <CarouselMainDisplay
         cards={carouselCards}
-        h={600}
+        h={750}
         w={"100%"}
         slideW={"90%"}
         slideGap={50}
       />
+      <Box mb={120} />
       <TextBlockSection
-        maw={900}
+        maw={1000}
         tagline={mainTextBlock.tagline}
         heading={mainTextBlock.heading}
         body={mainTextBlock.body}
       />
-      <TextPageHeading w={1200} heading="Home" ptb={60} />
+      <TextPageHeading w={1200} heading="all releases" mt={120} mb={20} />
       <CardGridCapsule cards={capsuleCards} cardH={300} cardW={535} />
     </Flex>
   );
