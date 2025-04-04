@@ -1,4 +1,4 @@
-import { Stack, Title, Text } from "@mantine/core";
+import { Stack, Text } from "@mantine/core";
 import animations from "../css/animations.module.css";
 import { useInViewport } from "@mantine/hooks";
 
@@ -14,9 +14,9 @@ export function TextBlockSection(props: React.PropsWithoutRef<Props>) {
 
   return (
     <Stack justify="flex-start" p={"lg"} maw={props.maw} gap={"xs"} ref={ref}>
-      <Title
+      <Text
         tt="uppercase"
-        order={6}
+        fw={600}
         c={"orange.5"}
         className={inViewport ? animations.fade_in : animations.hidden}
         style={{
@@ -24,10 +24,11 @@ export function TextBlockSection(props: React.PropsWithoutRef<Props>) {
         }}
       >
         {props.tagline}
-      </Title>
-      <Title
+      </Text>
+      <Text
         tt="uppercase"
-        order={2}
+        fw={600}
+        size="xl"
         c={"gray.0"}
         className={inViewport ? animations.fade_in : animations.hidden}
         style={{
@@ -35,7 +36,7 @@ export function TextBlockSection(props: React.PropsWithoutRef<Props>) {
         }}
       >
         {props.heading}
-      </Title>
+      </Text>
       <Text
         c={"gray.1"}
         className={inViewport ? animations.fade_in : animations.hidden}
