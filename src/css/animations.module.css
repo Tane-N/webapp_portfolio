@@ -37,7 +37,7 @@
 
 .focus_in {
   opacity: 0;
-  animation: focus_in 0.3s ease-in-out;
+  animation: focus_in 0.2s ease-in-out;
   animation-fill-mode: forwards;
 }
 

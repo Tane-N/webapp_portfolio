@@ -30,6 +30,10 @@ export function TextPageHeading(props: React.PropsWithoutRef<Props>) {
         c={"gray.0"}
         ref={ref}
         className={inViewport ? animations.fade_in : animations.hidden}
+        style={{
+          animationDelay: "0s",
+          opacity: 0,
+        }}
       >
         {props.heading}
       </Title>

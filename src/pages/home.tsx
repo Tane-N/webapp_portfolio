@@ -15,10 +15,10 @@ const carouselCards = [
       "https://store.steampowered.com/app/3452950/House_of_Mimics_Demo/",
   },
   {
-    image: "/images/together_we_die_carousel.webp",
+    image: "/images/sanghai_carousel_temp.webp",
     tagline: "In Development",
-    header: "Together We Die",
-    description: "Co-op Shooter",
+    header: "Sanghai: The Rum's Gone",
+    description: "a Social card game",
     buttonText: "",
     buttonLink: "",
   },
@@ -35,8 +35,12 @@ const carouselCards = [
 const mainTextBlock = {
   tagline: "Thanks for checking out my website!",
   heading: "My name is Taneli Nieminen",
-  body: "I am a game/frontend developer from Finland. I specialize in programming and software development, but have enough experience in UI/UX design to hold my own. I founded my own company in 2023, and have released multiple games since then, while also getting the opportunity to work with some awesome people. Currently I'm looking for full-time employment in the games industry, or as a frontend developer. Please do not hesitate to contact me for work, networking or advice! Always happy to make new contacts.",
-};
+  paragraphs: [
+    "I am a game developer from Finland. Currently I am open to work, and with my education in software development and experience working on commercial projects on multiple engines and platforms, I can confidently guarantee scalable, readable and reusable code.",
+    "Whether it is independent development and you need someone you can trust to deliver quality work, or a team where clear communication and sharing of expertise is needed, I will contribute to your project's success with maximum effort.",
+    "If you are in need of UI or web development, I am also profecient with modern tools like TypeScript and React (I used those to make this site) and would gladly take on that kind of challenges also.",
+    "Do not hesitate to get in touch for work or any other reason, always happy to make new contacts."
+  ],};
 
 const capsuleCards = [
   {
@@ -86,7 +90,7 @@ export default function Home() {
         maw={1000}
         tagline={mainTextBlock.tagline}
         heading={mainTextBlock.heading}
-        body={mainTextBlock.body}
+        paragraphs={mainTextBlock.paragraphs}
       />
       <TextPageHeading w={1200} heading="all releases" mt={120} mb={20} />
       <CardGridCapsule cards={capsuleCards} cardH={300} cardW={535} />

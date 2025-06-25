@@ -30,7 +30,7 @@ interface Props {
 export function CardGridCapsule(props: React.PropsWithoutRef<Props>) {
   const viewRef = useInViewport();
 
-  var currentDelay = 0;
+  let currentDelay = 0;
   const ANIMATION_DELAY = 0.1;
 
   function getAnimationDelay(): string {
@@ -61,6 +61,7 @@ export function CardGridCapsule(props: React.PropsWithoutRef<Props>) {
           }
           style={{
             animationDelay: delay,
+            opacity: 0
           }}
         >
           <Paper
