@@ -23,7 +23,7 @@ export function ButtonMailTo(props: React.PropsWithoutRef<Props>) {
       }
       onClick={() => {
         window.open(
-          "mailto:taneli.i.nieminen@gmail.com?subject=Contact%20from%20your%20site"
+          "mailto:taneli.nieminen@protonmail.com?subject=Contact%20from%20your%20site"
         );
       }}
     >
